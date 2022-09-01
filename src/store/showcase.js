@@ -21,15 +21,8 @@ const showcaseSlice = createSlice({
     initialState: {
         products: [],
         progressVisibility: false,
-        isSpoiled: false,
         status: 'idle',
         error: null
-    },
-
-    reducers: {
-        toggleSpoiled: state => {
-            state.isSpoiled = !state.isSpoiled
-        }
     },
 
     extraReducers: {
